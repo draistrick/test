@@ -26,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		44A654A618BD4308004886A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44A654A118BD4306004886A7 /* Test2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44A6546618BD4304004886A7;
+			remoteInfo = Test2;
+		};
+		44A654A818BD4308004886A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44A654A118BD4306004886A7 /* Test2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 44A6548A18BD4305004886A7;
+			remoteInfo = Test2Tests;
+		};
 		44B37D3518B55935002EE317 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 44B37D0118B55933002EE317 /* Project object */;
@@ -36,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44A654A118BD4306004886A7 /* Test2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Test2.xcodeproj; path = Test2/Test2.xcodeproj; sourceTree = "<group>"; };
 		44B37D0918B55933002EE317 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B37D0C18B55933002EE317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44B37D0E18B55933002EE317 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44A654A218BD4306004886A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44A654A718BD4308004886A7 /* Test2.app */,
+				44A654A918BD4308004886A7 /* Test2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		44B37D0018B55933002EE317 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +141,7 @@
 		44B37D1218B55933002EE317 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				44A654A118BD4306004886A7 /* Test2.xcodeproj */,
 				44B37D1B18B55934002EE317 /* xyzAppDelegate.h */,
 				44B37D1C18B55934002EE317 /* xyzAppDelegate.m */,
 				44B37D1E18B55934002EE317 /* Main_iPhone.storyboard */,
@@ -224,6 +249,12 @@
 			mainGroup = 44B37D0018B55933002EE317;
 			productRefGroup = 44B37D0A18B55933002EE317 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 44A654A218BD4306004886A7 /* Products */;
+					ProjectRef = 44A654A118BD4306004886A7 /* Test2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				44B37D0818B55933002EE317 /* test */,
@@ -231,6 +262,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		44A654A718BD4308004886A7 /* Test2.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Test2.app;
+			remoteRef = 44A654A618BD4308004886A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		44A654A918BD4308004886A7 /* Test2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Test2Tests.xctest;
+			remoteRef = 44A654A818BD4308004886A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		44B37D0718B55933002EE317 /* Resources */ = {
@@ -481,6 +529,7 @@
 				44B37D4318B55935002EE317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44B37D4418B55935002EE317 /* Build configuration list for PBXNativeTarget "testTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +538,7 @@
 				44B37D4618B55935002EE317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
